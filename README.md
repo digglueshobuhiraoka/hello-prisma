@@ -1,6 +1,6 @@
 # hello-prisma
 
-PrismaのPostgreSQL設定を試すためのレポジトリ。
+PrismaのPostgreSQL設定を試すためのレポジトリ。<br>
 https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres
 
 - モジュールインストール
