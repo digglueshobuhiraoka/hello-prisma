@@ -10,28 +10,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
+model post {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   title     String   @db.VarChar(255)
   content   String?
   published Boolean  @default(false)
-  author    User     @relation(fields: [authorId], references: [id])
+  author    user     @relation(fields: [authorId], references: [id])
   authorId  Int
 }
 
-model Profile {
+model profile {
   id     Int     @id @default(autoincrement())
   bio    String?
-  user   User    @relation(fields: [userId], references: [id])
+  user   user    @relation(fields: [userId], references: [id])
   userId Int     @unique
 }
 
-model User {
+model user {
   id      Int      @id @default(autoincrement())
   email   String   @unique
   name    String?
-  posts   Post[]
-  profile Profile?
+  posts   post[]
+  profile profile?
 }
