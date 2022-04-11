@@ -6,7 +6,7 @@ https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relat
 - モジュールインストール
 
 ```sh
-npm install prisma typescript ts-node @types/node --save-dev
+npm install
 ```
 
 - PostgreSQL起動
